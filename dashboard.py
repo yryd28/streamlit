@@ -1,7 +1,6 @@
 import pandas as pd
 import altair as alt
 import streamlit as st
-import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide")
 
@@ -131,17 +130,6 @@ with row3col1:
     st.altair_chart(    
         wijk_chart, use_container_width=True,
     )
-    custom_css = """
-    <style>
-    .alt-container>div {
-        box-shadow: 0 0 4px #cccccc;
-        padding: 10px;
-    }
-    </style>
-    """
-
-    st.markdown(custom_css, unsafe_allow_html=True)
-    
         
 
 with row3col2:
